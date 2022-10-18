@@ -3,7 +3,7 @@ var logger=require('morgan')
 var mongoose=require('mongoose')
 
 
-mongoose.connect("mongoose://localhost:27017/app",(err)=>{
+mongoose.connect("mongodb://localhost:27017/app",(err)=>{
   console.log(err?err:"connected to database")
 })
 
